@@ -331,6 +331,8 @@ body {
 .contact #form form {
   display: flex;
   flex-direction: column;
+  height: 65vh;
+  padding: 20px;
 }
 .contact #form #name {
   position: relative;
@@ -348,6 +350,7 @@ body {
   border-top: 2px solid #a2a2a2;
   border-bottom: 2px solid #a2a2a2;
   background-color: transparent;
+  color: #fff;
 }
 .contact #form textarea::placeholder {
   font-size: 1.5vw;
@@ -365,11 +368,13 @@ body {
   border-top: 2px solid #a2a2a2;
   border-bottom: 2px solid #a2a2a2;
   background-color: transparent;
+  color: #fff;
 }
-.contact button {
+.contact #form form button {
   position: relative;
-  top: 7rem;
-  left: 38%;
+  top: 6rem;
+  width: 20vw;
+  left: 6rem;
   padding: 1vw 2.5vw;
   border-radius: 0.5rem;
   cursor: pointer;

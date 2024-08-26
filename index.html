@@ -99,12 +99,18 @@
           <h1>Let's Connect </h1>
           <div class="contact-form">
             <div id="form">
-              <form id="contact-form">
-               <input id="name" type="text" placeholder="Enter your name" name="name" required>
-               <input id="gmail" type="text" placeholder="Enter your gmail" name="gmail" required>
-               <textarea id="msg" placeholder="Enter you message" cols="40" rows="3"></textarea>
-              </form>
-              <button>Submit</button>
+              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="clearForm(event)">
+                <input type="hidden" name="access_key" value="cb6bd593-898a-4af1-af10-0e8d65ca8dfe">
+                
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <input type="email" name="email" id="gmail" placeholder="Enter your email" required>
+                
+                <textarea name="message" id="msg" placeholder="Enter your message" cols="40" rows="3" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
             </div>
             <div id="socials">
               <div id="cont-gmail">

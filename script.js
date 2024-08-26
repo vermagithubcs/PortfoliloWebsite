@@ -247,3 +247,10 @@ main.addEventListener("mousemove",function(e){
     ease:"back.out"
   })
 })
+
+function clearForm(event){
+  event.preventDefault();
+  const form = document.querySelector('#contact-form');
+  form.submit();
+  form.reset();
+}
