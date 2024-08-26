@@ -1,0 +1,147 @@
+/* Media queries for animation website */
+@media (max-width: 480px) {
+    #home{
+        height: 395vh;
+    }
+    #main{
+        height: 395vh;
+    }
+    #main #loader {
+      background-color: blue;
+    }
+    #main #topheading h5,
+    #main #loader span {
+      font-size: 5vw;
+    }
+    #main .row h1 {
+      font-size: 13vw;
+      position: relative;
+    }
+    #main .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    #main .row #text-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 10vh;
+      position: relative;
+      bottom: 9rem;
+      width: 80vw;
+    }
+    #main .row2 .text h1 {
+      font-size: 3vw;
+    }
+    #main .row #text-content .text h5 {
+      font-size: 3vw;
+      white-space: nowrap;
+    }
+    #main .row2 .text {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 7rem;
+      right: 7rem;
+      padding: 5vw;
+    }
+    #main .row2 img {
+      display: none;
+    }
+    #main .row2 .text h1 {
+      font-size: 10vw;
+    }
+    #main .row2 .text #dev {
+      position: relative;
+      left: 15vw;
+    }
+    #skills-section #skillsImg #text h1 {
+      font-size: 15vw;
+    }
+    #skills-section #skillsImg .skills img,
+    #skills-section #skillsImg .skills2 img {
+      height: 15vw;
+    }
+    .project-section .projects h1 {
+      font-size: 13vw;
+    }
+    .project-section .works {
+      position: relative;
+      left: 1.5rem;
+      height: 50vh;
+      width: 90vw;
+    }
+    .project-section .works h2 {
+      font-size: 10vw;
+    }
+    .projects{
+        min-height: 80vh;
+    }
+    .projects::after {
+        content: "";
+        top: 40rem;
+        width: 100%;
+        position: absolute;
+        height: 110px;
+        transform: rotateY(-180deg) translateY(55%);
+        background-image: url("https://abhishekjha.me/rip.f6d7c4dd.svg");
+        background-size: cover;
+      }
+      #contact-section .contact-form{
+        display: flex;
+        flex-direction: column;
+      }
+      #contact-section .contact h1{
+        white-space: nowrap;
+        font-size: 9vw;
+        position: relative;
+        top: 2rem;
+        left: 5rem;
+        border-bottom: 2px solid #14cf93;
+        display: inline-block;
+      }
+      #contact-section .contact-form{
+        position: relative;
+        left: 1rem;
+        top: 4rem;
+        height: 80vh;
+      }
+      #contact-section #form{
+        width: 80vw;
+        left: 1rem;
+        position: relative;
+        top: 1rem;
+      }
+      #contact-section #contact-form input::placeholder{
+        font-size: 3vw;
+      }
+      #contact-section #contact-form #msg::placeholder{
+        font-size: 4vw;
+      }
+      #contact-section #socials #cont-gmail h2{
+        font-size: 2vw;
+        white-space: nowrap;
+      }
+      #contact-section #socials #cont-gmail{
+        position: relative;
+        top: 8rem;
+        left: 2rem;
+        width: 70vw;
+      }
+      #contact-section .cont-social{
+        width: 80vw;
+        position: relative;
+        top: 5rem;
+        padding: 20px;
+      }
+      #contact-section .cont-social h2{
+        position: relative;
+        top: 2.3rem;
+      }
+      #contact-section .cont-social #socialmedia img{
+        height: 5vh;
+        position: relative;
+        top: 4rem;
+      }
+  }

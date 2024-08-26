@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/responsive.css">
   </head>
   <body>
     <div id="main">
@@ -13,7 +14,7 @@
           <h5 class="reveal">Design portfolio</h5>
           <h5 class="reveal">&copy; 2024</h5>
         </div>
-        <h1 class="reveal">
+        <h1 class="reveal design">
           <span>Vikash</span> <span class="green">Verma</span> <span> is</span>
           <span> a</span>
         </h1>
@@ -46,6 +47,7 @@
         </div>
         <div class="row">
           <h1 class="reveal">Creative</h1>
+          <div id="text-content">
           <div class="text">
             <h5 class="reveal">Currently Available for</h5>
             <h5 class="reveal">Freelance WorldWide</h5>
@@ -55,6 +57,7 @@
             <h5 class="reveal">GMT(+5:30)</h5>
           </div>
         </div>
+        </div>
         <div class="row2">
           <img src="https://abhishekjha.me/down-arrow.040970d7.svg" />
           <div class="text">
@@ -62,6 +65,7 @@
             <h1 class="reveal" id="dev">Developer</h1>
           </div>
         </div>
+        <div id="skills-section">
         <div id="skills">
           <div id="skillsImg">
             <div id="text">
@@ -79,25 +83,34 @@
             </div>
           </div>
         </div>
+      </div>
+        <div class="project-section">
         <div class="projects">
-          <div id="cursor"></div>
           <h1>Wo<span>r</span>ks</h1>
           <div class="works">
-            <h2><a class="Netflix" href="#">Netflix</a></h2>
-            <h2><a class="WizardZ" href="#">WizardZ</a></h2>
-            <h2><a class="Twitter" href="#">X-Clone</a></h2>
+            <h2><a target="_blank" class="Netflix" href="https://vermagithubcs.github.io/Netflix-Clone-Website/">Netflix</a></h2>
+            <h2><a target="_blank" class="WizardZ" href="https://vermagithubcs.github.io/AnimationsWebsite/">WizardZ</a></h2>
+            <h2><a target="_blank" class="Twitter" href="https://vermagithubcs.github.io/X---Clone/">X-Clone</a></h2>
           </div>
         </div>
+      </div>
+        <div id="contact-section">
         <div class="contact">
-          <h1>Let's Connect</h1>
+          <h1>Let's Connect </h1>
           <div class="contact-form">
             <div id="form">
-              <form id="contact-form">
-               <input id="name" type="text" placeholder="Enter your name" name="name" required>
-               <input id="gmail" type="text" placeholder="Enter your gmail" name="gmail" required>
-               <textarea id="msg" placeholder="Enter you message" cols="40" rows="3"></textarea>
-              </form>
-              <button>Submit</button>
+              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="clearForm(event)">
+                <input type="hidden" name="access_key" value="cb6bd593-898a-4af1-af10-0e8d65ca8dfe">
+                
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <input type="email" name="email" id="gmail" placeholder="Enter your email" required>
+                
+                <textarea name="message" id="msg" placeholder="Enter your message" cols="40" rows="3" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
             </div>
             <div id="socials">
               <div id="cont-gmail">
@@ -108,16 +121,17 @@
               <h2>Follow Me:</h2>
               <div id="socialmedia">
                 <div class="github">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/640px-GitHub_Invertocat_Logo.svg.png">
+                
+                <a target="_blank" href="https://github.com/vermagithubcs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/640px-GitHub_Invertocat_Logo.svg.png"></a>
               </div>
               <div class="instagram">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+                <a target="_blank" href="https://www.instagram.com/jswithbro/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"></a>
               </div>
               <div class="linkedin">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png">
+                <a target="_blank" href="https://www.linkedin.com/in/vikashvermadeveloper/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
               </div>
               <div class="x">
-                <img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png">
+                <a target="_blank" href="https://x.com/verm3390"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png"></a>
               </div>
               
             </div>
@@ -126,10 +140,11 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="script.js"></script>
   </body>
 </html>
