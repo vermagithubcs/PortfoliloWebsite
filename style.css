@@ -24,7 +24,6 @@ body {
   height: 486vh;
 }
 #loader {
-  display: none;
   position: fixed;
   z-index: 9999;
   position: absolute;
@@ -72,7 +71,6 @@ body {
   width: 100%;
 }
 #green {
-  display: none;
   z-index: 999;
   position: absolute;
   top: 100%;
