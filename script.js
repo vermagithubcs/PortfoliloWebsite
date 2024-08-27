@@ -125,76 +125,76 @@ function animateHomePage() {
 revealtoSpan();
 valueSetters();
 loaderAnimation();
+function skills() {
 
-// function skills() {
-//   let js = document.querySelector("#skills .skills .js");
-//   js.addEventListener("mousemove", () => {
-//     gsap.to(js, {
-//       scale: 1.5,
-//     });
-//   });
-//   js.addEventListener("mouseleave", () => {
-//     gsap.to(js, {
-//       scale: 1,
-//     });
-//   });
-//   let react = document.querySelector("#skills .skills .react");
-//   react.addEventListener("mousemove", () => {
-//     gsap.to(react, {
-//       scale: 1.5,
-//     });
-//   });
-//   react.addEventListener("mouseleave", () => {
-//     gsap.to(react, {
-//       scale: 1,
-//     });
-//   });
-//   let gs = document.querySelector("#skills .skills .gs");
-//   gs.addEventListener("mousemove", () => {
-//     gsap.to(gs, {
-//       scale: 1.5,
-//     });
-//   });
-//   gs.addEventListener("mouseleave", () => {
-//     gsap.to(gs, {
-//       scale: 1,
-//     });
-//   });
-//   let tail = document.querySelector("#skills .skills2 .tail");
-//   tail.addEventListener("mousemove", () => {
-//     gsap.to(tail, {
-//       scale: 1.5,
-//     });
-//   });
-//   tail.addEventListener("mouseleave", () => {
-//     gsap.to(tail, {
-//       scale: 1,
-//     });
-//   });
-//   let gi = document.querySelector("#skills .skills2 .gi");
-//   gi.addEventListener("mousemove", () => {
-//     gsap.to(gi, {
-//       scale: 1.5,
-//     });
-//   });
-//   gi.addEventListener("mouseleave", () => {
-//     gsap.to(gi, {
-//       scale: 1,
-//     });
-//   });
-//   let nod = document.querySelector("#skills .skills2 .nod");
-//   nod.addEventListener("mousemove", () => {
-//     gsap.to(nod, {
-//       scale: 1.5,
-//     });
-//   });
-//   nod.addEventListener("mouseleave", () => {
-//     gsap.to(nod, {
-//       scale: 1,
-//     });
-//   });
-// }
-// skills();
+  let js = document.querySelector("#skills .skills .js");
+  js.addEventListener("mousemove", () => {
+    gsap.to(js, {
+      scale: 1.5,
+    });
+  });
+  js.addEventListener("mouseleave", () => {
+    gsap.to(js, {
+      scale: 1,
+    });
+  });
+  let react = document.querySelector("#skills .skills .react");
+  react.addEventListener("mousemove", () => {
+    gsap.to(react, {
+      scale: 1.5,
+    });
+  });
+  react.addEventListener("mouseleave", () => {
+    gsap.to(react, {
+      scale: 1,
+    });
+  });
+  let gs = document.querySelector("#skills .skills .gs");
+  gs.addEventListener("mousemove", () => {
+    gsap.to(gs, {
+      scale: 1.5,
+    });
+  });
+  gs.addEventListener("mouseleave", () => {
+    gsap.to(gs, {
+      scale: 1,
+    });
+  });
+  let tail = document.querySelector("#skills .skills2 .tail");
+  tail.addEventListener("mousemove", () => {
+    gsap.to(tail, {
+      scale: 1.5,
+    });
+  });
+  tail.addEventListener("mouseleave", () => {
+    gsap.to(tail, {
+      scale: 1,
+    });
+  });
+  let gi = document.querySelector("#skills .skills2 .gi");
+  gi.addEventListener("mousemove", () => {
+    gsap.to(gi, {
+      scale: 1.5,
+    });
+  });
+  gi.addEventListener("mouseleave", () => {
+    gsap.to(gi, {
+      scale: 1,
+    });
+  });
+  let nod = document.querySelector("#skills .skills2 .nod");
+  nod.addEventListener("mousemove", () => {
+    gsap.to(nod, {
+      scale: 1.5,
+    });
+  });
+  nod.addEventListener("mouseleave", () => {
+    gsap.to(nod, {
+      scale: 1,
+    });
+  });
+}
+skills();
 gsap.from("#skills-section .skills img, .skills2 img",{
   y:-60,
   duration:1,
