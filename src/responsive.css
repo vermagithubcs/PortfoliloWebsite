@@ -9,9 +9,6 @@
   #main {
     height: 395vh;
   }
-  #main #loader {
-    background-color: blue;
-  }
   #main #topheading h5,
   #main #loader span {
     font-size: 5vw;
